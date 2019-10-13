@@ -1,5 +1,9 @@
 ### ALL UNIVERSITIES
 Get http://localhost:4000/university http/1.1
 
+### By Zip
+Get http://localhost:4000/university/52557 http/1.1
 
-###
+
+### 1st nearest university to me
+Get http://localhost:4000/university/nearme/-91.9665342/41.017654 http/1.1
