@@ -2,8 +2,21 @@
 Get http://localhost:4000/university http/1.1
 
 ### By Zip
-Get http://localhost:4000/university/52557 http/1.1
+Get http://localhost:4000/university/94305 http/1.1
+
+### By name
+Get http://localhost:4000/university/MUM http/1.1
 
 
 ### 1st nearest university to me
 Get http://localhost:4000/university/nearme/-91.9665342/41.017654 http/1.1
+
+### add teacher to 
+Post http://localhost:4000/university/5da33e0dc64a6821346cf0b9/teacher
+Content-Type: application/json
+
+{
+    "_id": 3,
+    "name":"John Doe"
+}
+
