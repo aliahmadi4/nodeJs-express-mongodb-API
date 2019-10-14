@@ -46,6 +46,12 @@ router.post("/:id/teacher", async (req,res)=>{
     res.json({successful:1});
 })
 
+router.delete('/:id/teacher/:tid', async(req,res)=>{
+    let tid = parseInt(req.params.tid);
+    await req.db.update({_id:ObjectId(ObjectId(req.params.id))},{$pull:{teachers:{_id:tid}}});
+    res.json({success:1})
+})
+
 
 
 module.exports = router;

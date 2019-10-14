@@ -20,3 +20,5 @@ Content-Type: application/json
     "name":"John Doe"
 }
 
+### Delete a teacher
+delete http://localhost:4000/university/5da33bd28a1620205c09b45c/teacher/3
